@@ -30,12 +30,19 @@
     margin-bottom: 0;
     padding: 0;
     list-style: none;
+    @include breakpoint(isMobile){
+        overflow: auto;
+        flex-wrap: nowrap;
+    }
     li{
         @include breakpoint(isCommon){
             margin-bottom: 20px;
         }
     }
     >.col {
+        @include breakpoint(isMobile){
+            flex: 0 0 48%;
+        }
         @include breakpoint(isCommon) {
             margin-bottom: 30px;
         }

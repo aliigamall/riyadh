@@ -15,7 +15,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 10;
+            z-index: 100;
         }
     </style>
 </head>
@@ -288,7 +288,7 @@
                     </li>
                 </ul>
                 <div id="news" class="tabs__tab-panel tabs__tab-panel--active">
-                    <div class="row is-animated" data-animation="true">
+                    <div class="is-animated" data-animation="true">
                         <div class="tabs__view-all">
                             <a href="#0" class="button button--more">
                                 عرض الكل
@@ -299,61 +299,66 @@
                                 </i>
                             </a>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <a href="#" class="card__image">
-                                    <img src="./src/images/news1.jpg" alt="news">
-                                </a>
-                                <div class="card__content">
-                                    <div class="card__date"><span>الأحد ١٠ من صفر ١٤٤٠</span><span>المصدر: جريده
-                                            الرياض</span></div>
-                                    <h3 class="card__title"><a href="#">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة
-                                            المدنية</a></h3>
-                                    <div class="card__brief">
-                                        عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون
-                                        مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                        <div id="newsSwiper" class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <a href="#" class="card__image">
+                                            <img src="./src/images/news1.jpg" alt="news">
+                                        </a>
+                                        <div class="card__content">
+                                            <div class="card__date"><span>الأحد ١٠ من صفر ١٤٤٠</span><span>المصدر: جريده
+                                                    الرياض</span></div>
+                                            <h3 class="card__title"><a href="#">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة
+                                                    المدنية</a></h3>
+                                            <div class="card__brief">
+                                                عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون
+                                                مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <a href="#" class="card__image">
-                                    <img src="./src/images/news2.jpg" alt="news">
-                                </a>
-                                <div class="card__content">
-                                    <div class="card__date"><span>الأحد ١٠ من صفر ١٤٤٠</span><span>المصدر: جريده
-                                            الرياض</span></div>
-                                    <h3 class="card__title"><a href="#">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة
-                                            المدنية</a></h3>
-                                    <div class="card__brief">
-                                        عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون
-                                        مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <a href="#" class="card__image">
+                                            <img src="./src/images/news2.jpg" alt="news">
+                                        </a>
+                                        <div class="card__content">
+                                            <div class="card__date"><span>الأحد ١٠ من صفر ١٤٤٠</span><span>المصدر: جريده
+                                                    الرياض</span></div>
+                                            <h3 class="card__title"><a href="#">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة
+                                                    المدنية</a></h3>
+                                            <div class="card__brief">
+                                                عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون
+                                                مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <a href="#" class="card__image">
-                                    <img src="./src/images/news3.jpg" alt="news">
-                                </a>
-                                <div class="card__content">
-                                    <div class="card__date"><span>الأحد ١٠ من صفر ١٤٤٠</span><span>المصدر: جريده
-                                            الرياض</span></div>
-                                    <h3 class="card__title"><a href="#">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة
-                                            المدنية</a></h3>
-                                    <div class="card__brief">
-                                        عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون
-                                        مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <a href="#" class="card__image">
+                                            <img src="./src/images/news3.jpg" alt="news">
+                                        </a>
+                                        <div class="card__content">
+                                            <div class="card__date"><span>الأحد ١٠ من صفر ١٤٤٠</span><span>المصدر: جريده
+                                                    الرياض</span></div>
+                                            <h3 class="card__title"><a href="#">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة
+                                                    المدنية</a></h3>
+                                            <div class="card__brief">
+                                                عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون
+                                                مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>  
+                            <div class="swiper-pagination swiper-pagination--absolute"></div>
                         </div>
                     </div>
                 </div>
                 <div id="govNews" class="tabs__tab-panel">
-                    <div class="row" data-animation="true">
+                    <div data-animation="true">
                         <div class="tabs__view-all">
                             <a href="#0" class="button button--more">
                                 عرض الكل
@@ -364,56 +369,61 @@
                                 </i>
                             </a>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <a href="#" class="card__image">
-                                    <img src="./src/images/news1.jpg" alt="news">
-                                </a>
-                                <div class="card__content">
-                                    <div class="card__date"><span>الأحد ١٠ من صفر ١٤٤٠</span><span>المصدر: جريده
-                                            الرياض</span></div>
-                                    <h3 class="card__title"><a href="#">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة
-                                            المدنية</a></h3>
-                                    <div class="card__brief">
-                                        عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون
-                                        مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                        <div id="govsSwiper" class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <a href="#" class="card__image">
+                                            <img src="./src/images/news1.jpg" alt="news">
+                                        </a>
+                                        <div class="card__content">
+                                            <div class="card__date"><span>الأحد ١٠ من صفر ١٤٤٠</span><span>المصدر: جريده
+                                                    الرياض</span></div>
+                                            <h3 class="card__title"><a href="#">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة
+                                                    المدنية</a></h3>
+                                            <div class="card__brief">
+                                                عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون
+                                                مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <a href="#" class="card__image">
-                                    <img src="./src/images/news2.jpg" alt="news">
-                                </a>
-                                <div class="card__content">
-                                    <div class="card__date"><span>الأحد ١٠ من صفر ١٤٤٠</span><span>المصدر: جريده
-                                            الرياض</span></div>
-                                    <h3 class="card__title"><a href="#">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة
-                                            المدنية</a></h3>
-                                    <div class="card__brief">
-                                        عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون
-                                        مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <a href="#" class="card__image">
+                                            <img src="./src/images/news2.jpg" alt="news">
+                                        </a>
+                                        <div class="card__content">
+                                            <div class="card__date"><span>الأحد ١٠ من صفر ١٤٤٠</span><span>المصدر: جريده
+                                                    الرياض</span></div>
+                                            <h3 class="card__title"><a href="#">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة
+                                                    المدنية</a></h3>
+                                            <div class="card__brief">
+                                                عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون
+                                                مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <a href="#" class="card__image">
-                                    <img src="./src/images/news3.jpg" alt="news">
-                                </a>
-                                <div class="card__content">
-                                    <div class="card__date"><span>الأحد ١٠ من صفر ١٤٤٠</span><span>المصدر: جريده
-                                            الرياض</span></div>
-                                    <h3 class="card__title"><a href="#">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة
-                                            المدنية</a></h3>
-                                    <div class="card__brief">
-                                        عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون
-                                        مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <a href="#" class="card__image">
+                                            <img src="./src/images/news3.jpg" alt="news">
+                                        </a>
+                                        <div class="card__content">
+                                            <div class="card__date"><span>الأحد ١٠ من صفر ١٤٤٠</span><span>المصدر: جريده
+                                                    الرياض</span></div>
+                                            <h3 class="card__title"><a href="#">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة
+                                                    المدنية</a></h3>
+                                            <div class="card__brief">
+                                                عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون
+                                                مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>  
+                            <div class="swiper-pagination swiper-pagination--absolute"></div>
                         </div>
                     </div>
                 </div>
@@ -650,7 +660,7 @@
         <div class="main-footer__top">
             <div class="container">
                 <ul class="main-footer__links row">
-                    <li class="col-sm-4 col-lg-2">
+                    <li class="col col-sm-4 col-lg-2">
                         <h4 class="typo-title">
                             <strong>إمارة منطقة الرياض</strong>
                         </h4>
@@ -659,7 +669,7 @@
                         <a href="#/" class="main-footer__link">محافظات المنطقة</a>
                         <a href="#/" class="main-footer__link">القسم النسوي</a>
                     </li>
-                    <li class="col-sm-4 col-lg-2">
+                    <li class="col col-sm-4 col-lg-2">
                         <h4 class="typo-title">
                             <strong>الخدمات الالكترونية</strong>
                         </h4>
@@ -670,7 +680,7 @@
                         <a href="#/" class="main-footer__link">خدمة التعديات على الأراضي الحكومية‎</a>
                         <a href="#/" class="main-footer__link">خدمة الاستدعاء الإلكتروني</a>
                     </li>
-                    <li class="col-sm-4 col-lg-2">
+                    <li class="col col-sm-4 col-lg-2">
                         <h4 class="typo-title">
                             <strong>المركز الإعلامي</strong>
                         </h4>
@@ -681,7 +691,7 @@
                         <a href="#/" class="main-footer__link">التقارير</a>
                         <a href="#/" class="main-footer__link">الإعلانات‎</a>
                     </li>
-                    <li class="col-sm-4 col-lg-2">
+                    <li class="col col-sm-4 col-lg-2">
                         <h4 class="typo-title">
                             <strong>روابط مفيده</strong>
                         </h4>
@@ -691,7 +701,7 @@
                         <a href="#/" class="main-footer__link">بوابة المشتريات الحكومية‎</a>
                         <a href="#/" class="main-footer__link">الأنظمة واللوائح الحكومية</a>
                     </li>
-                    <li class="col-sm-4 col-lg-2">
+                    <li class="col col-sm-4 col-lg-2">
                         <h4 class="typo-title">
                             <strong>روابط مفيده</strong>
                         </h4>
@@ -699,7 +709,7 @@
                         <a href="#/" class="main-footer__link">الأسئلة الشائعة‎</a>
                         <a href="#/" class="main-footer__link">التوظيف</a>
                     </li>
-                    <li class="col-sm-4 col-lg-2">
+                    <li class="col col-sm-4 col-lg-2">
                         <img src="./src/images/logo-vertical.png" alt="logo" class="main-footer__logo" />
                         <ul class="socials-bar">
                             <li class="socials-bar__item">
@@ -764,70 +774,7 @@
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="./src/scripts/scripts.js"></script>
     <script>
-        $("#BtnVotingResult").on("click", function (e) {
-            e.preventDefault();
-            $(".voting__results").addClass('voting__results--show');
-        });
-        $("#BtnVotingBack").on("click", function (e) {
-            e.preventDefault();
-            $(".voting__results").removeClass('voting__results--show');
-        });
-        var servicesSwiper = new Swiper('#servicesSwiper', {
-            spaceBetween: 10,
-            navigation: {
-                nextEl: '#servicesSwiper .swiper-button-next',
-                prevEl: '#servicesSwiper .swiper-button-prev',
-            },
-            pagination: {
-                el: '#servicesSwiper .swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 4,
-                },
-            }
-        });
-
-        var adsSwiper = new Swiper('#adsSwiper', {
-            pagination: {
-                el: '#adsSwiper .swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 1,
-                },
-                1024: {
-                    slidesPerView: 1,
-                },
-            }
-        });
-
-        var galleryThumbs = new Swiper('#bannerThmubs', {
-            spaceBetween: 10,
-            slidesPerView: 3,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-        });
-        var galleryTop = new Swiper('#bannerSlider', {
-            parallax:true,
-            autoplay: {
-                delay: 10000,
-            },
-            thumbs: {
-                swiper: galleryThumbs
-            }
-        });
+        
     </script>
 
 </body>

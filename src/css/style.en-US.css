@@ -6537,7 +6537,7 @@ button.close {
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 44px;
   height: 44px;
   margin-top: -22px;
@@ -6615,6 +6615,11 @@ button.close {
   z-index: 10;
 }
 
+.swiper-pagination--absolute {
+  position: absolute;
+  bottom: 0;
+}
+
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
 }
@@ -6623,7 +6628,7 @@ button.close {
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 10px;
+  bottom: 0;
   left: 0;
   width: 100%;
 }
@@ -11049,7 +11054,7 @@ button.btn + .btn {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .main-header--fixed {
@@ -11377,9 +11382,25 @@ div#accordion .groupheader:nth-child(1) {
   list-style: none;
 }
 
+@media (min-width: 0) and (max-width: 767px) {
+  .main-footer__links {
+    overflow: auto;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+}
+
 @media (min-width: 0) and (max-width: 1024px) {
   .main-footer__links li {
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .main-footer__links > .col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
   }
 }
 
@@ -12558,6 +12579,13 @@ div#accordion .groupheader:nth-child(1) {
   padding: 0;
 }
 
+@media (min-width: 768px) {
+  .welcome:hover .swiper-slide-active .welcome__banner {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
 .welcome__tab-panel {
   position: relative;
   color: #fff;
@@ -12584,21 +12612,24 @@ div#accordion .groupheader:nth-child(1) {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  -webkit-transition: -webkit-transform 30s ease-in-out;
+  transition: -webkit-transform 30s ease-in-out;
+  transition: transform 30s ease-in-out;
+  transition: transform 30s ease-in-out, -webkit-transform 30s ease-in-out;
 }
 
 .welcome__container {
-  background-color: #2b914e;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: auto;
+  bottom: 10px;
 }
 
 @media (min-width: 768px) {
   .welcome__container {
-    background-color: transparent;
-    position: absolute;
-    width: 100%;
-    right: 0;
-    left: 0;
     top: 160px;
     bottom: 160px;
     padding-bottom: 0;
@@ -12656,7 +12687,23 @@ div#accordion .groupheader:nth-child(1) {
 }
 
 .welcome__action {
-  margin-top: 2.1875rem;
+  margin-top: 10px;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .welcome__action .button--lg {
+    padding: 6px 25px;
+    min-width: 10px;
+  }
+  .welcome__action .button--lg .button__icon {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .welcome__action {
+    margin-top: 2.1875rem;
+  }
 }
 
 @media (min-width: 768px) {

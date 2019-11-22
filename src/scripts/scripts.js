@@ -25,6 +25,28 @@ $(function () {
             setTimeout(() => {
                 $(tabTarget).find('[data-animation]').addClass('is-animated');
             }, 10);
+            var govsSwiper = new Swiper('#govsSwiper', {
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: '#govsSwiper .swiper-button-next',
+                    prevEl: '#govsSwiper .swiper-button-prev',
+                },
+                pagination: {
+                    el: '#govsSwiper .swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                }
+            });
         });
     }
 
@@ -39,6 +61,96 @@ $(function () {
     $("#enableGreyScale").on("click", function(e){
         e.preventDefault();
         $("body").toggleClass("body--grayscale");
+    });
+
+    $("#BtnVotingResult").on("click", function (e) {
+        e.preventDefault();
+        $(".voting__results").addClass('voting__results--show');
+    });
+    $("#BtnVotingBack").on("click", function (e) {
+        e.preventDefault();
+        $(".voting__results").removeClass('voting__results--show');
+    });
+    var servicesSwiper = new Swiper('#servicesSwiper', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '#servicesSwiper .swiper-button-next',
+            prevEl: '#servicesSwiper .swiper-button-prev',
+        },
+        pagination: {
+            el: '#servicesSwiper .swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 4,
+            },
+        }
+    });
+    var newsSwiper = new Swiper('#newsSwiper', {
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '#newsSwiper .swiper-button-next',
+            prevEl: '#newsSwiper .swiper-button-prev',
+        },
+        pagination: {
+            el: '#newsSwiper .swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        }
+    });
+
+    
+
+    var adsSwiper = new Swiper('#adsSwiper', {
+        pagination: {
+            el: '#adsSwiper .swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 1,
+            },
+            1024: {
+                slidesPerView: 1,
+            },
+        }
+    });
+
+    var galleryThumbs = new Swiper('#bannerThmubs', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('#bannerSlider', {
+        parallax:true,
+        loop: true,
+        // autoplay: {
+        //     delay: 10000,
+        // },
+        thumbs: {
+            swiper: galleryThumbs
+        }
     });
 });
 
