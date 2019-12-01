@@ -24,20 +24,7 @@
             <div class="nav-bar--responsive">
                 <nav class="nav-bar nav-bar--sm nav-bar__secondary-menu nav-bar--end">
                     <ul class="nav-bar__menu">
-                        <li class="nav-bar__menu-item">
-                            <a href="#0" class="nav-bar__menu-link">
-                                <svg width="24" height="24">
-                                    <use xlink:href="./src/images/svg-icons.svg#icon-mobile"></use>
-                                </svg>
-                                تطبيقات الجوال</a>
-                        </li>
-                        <li class="nav-bar__menu-item">
-                            <a href="#0" class="nav-bar__menu-link">
-                                <svg width="24" height="24">
-                                    <use xlink:href="./src/images/svg-icons.svg#icon-email"></use>
-                                </svg>
-                                إتصل بنا</a>
-                        </li>
+                       
                         <li class="nav-bar__menu-item">
                             <a href="#0" class="nav-bar__menu-link">
                                 <svg width="24" height="24">
@@ -47,11 +34,19 @@
                             </a>
                         </li>
                         <li class="nav-bar__menu-item">
-                            <a href="#0" id="enableGreyScale" class="nav-bar__menu-link">
-                                <svg width="24" height="24">
-                                    <use xlink:href="./src/images/svg-icons.svg#icon-view-off"></use>
-                                </svg>
-                            </a>
+                            <div class="custom-dropdown">
+                                <a href="#0" class="nav-bar__menu-link">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="./src/images/svg-icons.svg#icon-user"></use>
+                                    </svg>
+                                    مرحبا محمد سعيد
+                                </a>
+                                <div class="custom-dropdown__items">
+                                    <a href="#0" class="custom-dropdown__link">مهامي</a>
+                                    <a href="#0" class="custom-dropdown__link">الملف الشخصي</a>
+                                    <a href="#0" class="custom-dropdown__link">تسجيل الخروج</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-bar__menu-item">
                             <svg width="65" height="45" class="m-0">
@@ -148,8 +143,8 @@
                                 <div class="form-group">
                                     <label>رقم الجوال</label>
                                     <span class="required">*</span>
-                                    <input name="ctl00$ctl41$g_91f2e35a_bc85_44ef_ae8b_5aab24f90fea$ctl00$txtMobile" type="text"
-                                        class="form-control">
+                                    <input type="text"
+                                        class="form-control form-control-error">
                                         <span
                                         class="text-danger">خطأ في رقم الجوال، أدخل رقم جوال صحيح بصيغة:
                                         9665*******</span>
