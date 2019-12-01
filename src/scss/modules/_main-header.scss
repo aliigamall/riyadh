@@ -1,6 +1,7 @@
 .main-header {
     background-color: $header-bg;
     padding: $header-padding;
+    z-index: 100;
     &--absolute,
     &--fixed {
         position: absolute;

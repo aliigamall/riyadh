@@ -144,10 +144,11 @@ $(function () {
     });
     var galleryTop = new Swiper('#bannerSlider', {
         parallax:true,
+        effect: 'fade',
+        autoplay: {
+            delay: 10000,
+        },
         loop: true,
-        // autoplay: {
-        //     delay: 10000,
-        // },
         thumbs: {
             swiper: galleryThumbs
         }

@@ -49,9 +49,19 @@
     margin-top: 10px;
     padding-top: 10px;
     padding-#{$start}: 20px;
-    .nav-bar__menu-item:not(:last-child){
-        @include breakpoint(large){
-            padding-#{$end}: 40px;
+    .nav-bar__menu-item{
+        &:not(:last-child){
+            @include breakpoint(large){
+                padding-#{$end}: 40px;
+            }
+        }
+        &:first-child{
+            overflow: hidden;
+            border-radius: 5px 5px 0 0;
+        }
+        &:last-child{
+            overflow: hidden;
+            border-radius: 0 0 5px 5px;
         }
     }
     .nav-bar__sub-menu{

@@ -13,8 +13,8 @@ $font-path: '../fonts';
 //  selection background color
 $selection-color: #727272;
 //  header
-$header-bg: transparent;
-$header-padding: 10px 0;
+$header-bg: $color-primary;
+$header-padding: 10px 0 20px;
 $header-z-index: 100;
 // footer
 $footer-bg: #f7f7f7;

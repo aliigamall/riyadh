@@ -6,8 +6,7 @@
     font-size: rem(25);
     font-weight: 500;
     color: $color-text;
-    margin: 0;
-    display: inline-block;
+    margin-bottom: 1em;
     @include breakpoint(mid){
         font-size: rem(40);
     }
@@ -17,17 +16,7 @@
             color: #fff;
         }
     }
-    &:not(&--no-underline) {
-        &:after {
-            content: '';
-            width: 65%;
-            height: 8px;
-            background: $color-primary;
-            display: block;
-            border-radius: 1em;
-            margin-top: 5px;
-        }
-    }
+  
     >p {
         font-size: .4em;
         margin-bottom: 0;
