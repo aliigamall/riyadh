@@ -5,6 +5,7 @@
 }
 .main-footer__bottom{
     background: $footer-bottom-bg;
+    border-top: 1px solid $footer-bg;
     padding: 15px 0;
     @include breakpoint(isCommon){
         font-size: rem(14);

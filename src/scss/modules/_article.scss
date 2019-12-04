@@ -12,3 +12,53 @@
 .article__action{
     margin-top: 2em;
 }
+.article-details{
+    font-size: 16px;
+}
+.article-details__header{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.article-details__title{
+font-size: 2em;
+}
+.article-details__socials {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-direction: row-reverse;
+}
+.article-details__date{
+    display: flex;
+    color: #808080;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+.article-details__date-item{
+    margin-#{$end}: 20px;
+}
+.article-details__image{
+    margin-bottom: 20px;
+    img{
+        width: 100%;
+    }
+}
+.article-details__content{
+    color: #373435;
+    line-height: 1.8;
+    font-size: 1em;
+}
+.article__rating-control{
+    display: flex;
+    align-items: center;
+    label{
+        margin-bottom: 0;
+        margin-#{$end}: 20px;
+    }
+}
+.article__captcha{
+    height: 25px;
+    margin: 0 50px;
+}
