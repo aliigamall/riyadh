@@ -21,72 +21,9 @@
                     <img src="./src/images/logo.png" alt="alriyadh logo" />
                 </a>
             </h1>
-            <div class="nav-bar--responsive">
-                <nav class="nav-bar nav-bar--sm nav-bar__secondary-menu nav-bar--end">
-                    <ul class="nav-bar__menu">
-                        <li class="nav-bar__menu-item">
-                            <a href="#0" class="nav-bar__menu-link">
-                                <svg width="24" height="24">
-                                    <use xlink:href="./src/images/svg-icons.svg#icon-language"></use>
-                                </svg>
-                                English
-                            </a>
-                        </li>
-                        <li class="nav-bar__menu-item">
-                            <a href="#0" id="enableGreyScale" class="nav-bar__menu-link">
-                                <svg width="24" height="24">
-                                    <use xlink:href="./src/images/svg-icons.svg#icon-view-off"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="nav-bar__menu-item">
-                            <svg width="65" height="45" class="m-0">
-                                <use xlink:href="./src/images/svg-icons.svg#icon-vision2030"></use>
-                            </svg>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="nav-bar nav-bar__primary-menu nav-bar--end">
-                    <ul class="nav-bar__menu">
-                        <li class="nav-bar__menu-item">
-                            <a href="#0" class="nav-bar__menu-link">الرئيسية</a>
-                        </li>
-                        <li class="nav-bar__menu-item">
-                            <a href="#0" class="nav-bar__menu-link">إمارة منطقة الرياض</a>
-                            <ul class="nav-bar__sub-menu">
-                                <li class="nav-bar__menu-item">
-                                    <a href="#0" class="nav-bar__menu-link">عن الاماره</a>
-                                </li>
-                                <li class="nav-bar__menu-item">
-                                    <a href="#0" class="nav-bar__menu-link">أمراء الرياض</a>
-                                </li>
-                                <li class="nav-bar__menu-item">
-                                    <a href="#0" class="nav-bar__menu-link">محافظات المنطقه</a>
-                                </li>
-                                <li class="nav-bar__menu-item">
-                                    <a href="#0" class="nav-bar__menu-link">القسم النسوي</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-bar__menu-item">
-                            <a href="#0" class="nav-bar__menu-link">الخدمات الإلكترونية</a>
-                        </li>
-                        <li class="nav-bar__menu-item">
-                            <a href="#0" class="nav-bar__menu-link">المركز الإعلامي</a>
-                        </li>
-
-                        <li class="nav-bar__menu-item">
-                            <div class="search-box">
-                                <a href="#" class="search-box__icon">
-                                    <svg width="24" height="24" class="m-0">
-                                        <use xlink:href="./src/images/svg-icons.svg#icon-search"></use>
-                                    </svg>
-                                </a>
-                                <input type="search" class="search-box__input" placeholder="بحث ..." />
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="nav-bar--responsive d-flex justify-content-center align-items-center">
+                <span class="eservice-header mr-5">بوابه <br />
+                    الخدمات الالكترونيه</span>
             </div>
             <div class="main-header__responsive">
                 <a href="#0" class="main-header__responsive-icon icon vertical-nav__icon">
@@ -102,31 +39,38 @@
     <main>
         <div class="container pt-4 pb-4">
             <h2 class="main-title">
-                مستخدم جديد
+                تسجيل مستخدم جديد
             </h2>
             <div class="login__controls mb-5">
-                <div class="d-flex justify-content-center row">
-                    <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="login__hint">
+                            برجاء إدخال البيانات الفعلية المسجلة في إماره الرياض
+                        </div>
                         <form action="#">
+
                             <div class="form-group">
-                                <label for="">إسم المستخدم</label>
-                                <input type="text" class="form-control" placeholder="إسم المستخدم" required>
+                                <label for="">
+                                    <svg>
+                                        <use xlink:href="./src/images/svg-icons.svg#icon-lock"></use>
+                                    </svg>
+                                    الهوية الوطنية</label>
+                                <input type="text" class="form-control" placeholder="الهوية الوطنية" required>
                             </div>
                             <div class="form-group">
-                                <label for="">البريد الالكتروني</label>
-                                <input type="text" class="form-control" placeholder="البريد الالكتروني" required>
+                                <label for="">
+                                    <svg>
+                                        <use xlink:href="./src/images/svg-icons.svg#icon-date"></use>
+                                    </svg>
+                                    تاريخ الميلاد</label>
+                                <input type='text' id='datetimepicker6' class="form-control"
+                                    placeholder="تاريخ الميلاد" />
                             </div>
-                            <div class="form-group">
-                                <label for="">كلمة المرور</label>
-                                <input type="password" class="form-control" placeholder="كلمة المرور" required>
-                            </div>
-                            <div class="form-group">
-                                    <label for="">تكرار كلمة المرور</label>
-                                    <input type="password" class="form-control" placeholder="تكرار كلمة المرور" required>
-                                </div>
+
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary">تسجيل</button>
                             </div><!-- End .form-footer -->
+
                         </form>
                     </div><!-- End .col-md-6 -->
                 </div>
@@ -135,111 +79,10 @@
     </main>
 
     <footer class="main-footer">
-        <div class="main-footer__top">
-            <div class="container">
-                <ul class="main-footer__links row">
-                    <li class="col col-sm-4 col-lg-2">
-                        <h4 class="typo-title">
-                            <strong>إمارة منطقة الرياض</strong>
-                        </h4>
-                        <a href="#/" class="main-footer__link">عن الامارة</a>
-                        <a href="#/" class="main-footer__link">أمراد المنطقة</a>
-                        <a href="#/" class="main-footer__link">محافظات المنطقة</a>
-                        <a href="#/" class="main-footer__link">القسم النسوي</a>
-                    </li>
-                    <li class="col col-sm-4 col-lg-2">
-                        <h4 class="typo-title">
-                            <strong>الخدمات الالكترونية</strong>
-                        </h4>
-                        <a href="#/" class="main-footer__link">خدمات الزواج من الأجانب‎</a>
-                        <a href="#/" class="main-footer__link">خدمة السجناء‎</a>
-                        <a href="#/" class="main-footer__link">خدمة إنفاذ الحكم الشرعي‎</a>
-                        <a href="#/" class="main-footer__link">خدمة تملك العقار‎</a>
-                        <a href="#/" class="main-footer__link">خدمة التعديات على الأراضي الحكومية‎</a>
-                        <a href="#/" class="main-footer__link">خدمة الاستدعاء الإلكتروني</a>
-                    </li>
-                    <li class="col col-sm-4 col-lg-2">
-                        <h4 class="typo-title">
-                            <strong>المركز الإعلامي</strong>
-                        </h4>
-                        <a href="#/" class="main-footer__link">الأخبار</a>
-                        <a href="#/" class="main-footer__link">معرض الصور</a>
-                        <a href="#/" class="main-footer__link">معرض الفيديو</a>
-                        <a href="#/" class="main-footer__link">البيانات المفتوحه‎</a>
-                        <a href="#/" class="main-footer__link">التقارير</a>
-                        <a href="#/" class="main-footer__link">الإعلانات‎</a>
-                    </li>
-                    <li class="col col-sm-4 col-lg-2">
-                        <h4 class="typo-title">
-                            <strong>روابط مفيده</strong>
-                        </h4>
-                        <a href="#/" class="main-footer__link">المجلس الإلكتروني‎</a>
-                        <a href="#/" class="main-footer__link">وزارة الداخلية‎</a>
-                        <a href="#/" class="main-footer__link">مركز المعلومات الوطني‎</a>
-                        <a href="#/" class="main-footer__link">بوابة المشتريات الحكومية‎</a>
-                        <a href="#/" class="main-footer__link">الأنظمة واللوائح الحكومية</a>
-                    </li>
-                    <li class="col col-sm-4 col-lg-2">
-                        <h4 class="typo-title">
-                            <strong>روابط مفيده</strong>
-                        </h4>
-                        <a href="#/" class="main-footer__link">إتصل بنا‎</a>
-                        <a href="#/" class="main-footer__link">الأسئلة الشائعة‎</a>
-                        <a href="#/" class="main-footer__link">التوظيف</a>
-                    </li>
-                    <li class="col col-sm-4 col-lg-2">
-                        <img src="./src/images/logo-vertical.png" alt="logo" class="main-footer__logo" />
-                        <ul class="socials-bar">
-                            <li class="socials-bar__item">
-                                <a href="#0" class="socials-bar__icon icon">
-                                    <svg>
-                                        <use xlink:href="./src/images/svg-icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-bar__item">
-                                <a href="#0" class="socials-bar__icon icon">
-                                    <svg>
-                                        <use xlink:href="./src/images/svg-icons.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-bar__item">
-                                <a href="#0" class="socials-bar__icon icon">
-                                    <svg>
-                                        <use xlink:href="./src/images/svg-icons.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-bar__item">
-                                <a href="#0" class="socials-bar__icon icon">
-                                    <svg>
-                                        <use xlink:href="./src/images/svg-icons.svg#icon-youtube"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <div class="main-footer__bottom">
             <div class="container">
-                <div class="row justify-content-sm-between align-items-sm-center">
-                    <div class="col">
-                        &copy; جميع الحقوق محفوظة إمارة منطقة الرياض
-                    </div>
-                    <ul class="main-footer__quick-links">
-                        <li>
-                            <a href="#0">خريطة الموقع</a>
-                        </li>
-                        <li>
-                            <a href="#0">الأسئلة الشائعة</a>
-                        </li>
-                        <li>
-                            <a href="#0">سياسة الخصوصية</a>
-                        </li>
-                    </ul>
+                <div class="row justify-content-sm-center align-items-sm-center">
+                    &copy; جميع الحقوق محفوظة إمارة منطقة الرياض
                 </div>
             </div>
         </div>
@@ -253,6 +96,7 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="./src/scripts/svgxuse.min.js"></script>
     <script src="./src/scripts/scripts.js"></script>
     <script type="text/javascript">
         $(function () {
