@@ -92,3 +92,16 @@
     display: flex;
     text-align: center;
 }
+.main-header--secondary{
+    @include breakpoint(isCommon){
+        .nav-bar--responsive{
+            background-color: $color-secondary;
+        }
+        .nav-bar__menu{
+            width: 100%;
+        }
+        .nav-bar__menu-link{
+            flex: 1;
+        }
+    }
+}

@@ -98,6 +98,10 @@ button.button {
     background-color: rgba(#fff, 0.4);
     color: #000;
     border: 1px solid #fff;
+    &:hover{
+      background-color: rgba(#fff, 1);
+      color: #000;
+    }
   }
 
   &--dark {
@@ -114,7 +118,7 @@ button.button {
 
   &--md {
     font-size: rem(18);
-    padding: 0.35em 1.8em;
+    padding: 0.35em 2.3em 0.65em 2.3em;
     min-width: rem(200);
     .button__icon {
       width: 25px;

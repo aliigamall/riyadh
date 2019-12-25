@@ -249,3 +249,10 @@
 .nav-bar__menu-link--lg {
   font-size: rem(20);
 }
+.nav-bar__menu{
+  .nav-bar__menu-link--dark{
+    &:hover{
+      color: $color-secondary;
+    }
+}
+}

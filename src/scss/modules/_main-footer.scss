@@ -143,3 +143,34 @@
     display: block;
     margin: 0 auto 20px;
 }
+
+.main-footer--dark{
+    .main-footer__links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-footer__top{
+        background-color: #171a20;
+    }
+    .main-footer__bottom{
+        color: #fff;
+        background-color: #131418;
+        border-top: 1px solid #131418;
+    }
+    .main-footer__quick-links{
+        a{
+            color: #fff;
+        }
+    }
+    .icon{
+        > svg{
+            fill: $color-secondary;
+        }
+        &:hover{
+            > svg{
+                fill:#fff;
+            }   
+        }
+    } 
+}
