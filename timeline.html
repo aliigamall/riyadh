@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#000" />
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="./src/images/favico.png"
+      type="image/png"
+    />
+    <title>إمارة منطقة الرياض</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.ar-SA.css" />
+  </head>
+
+  <body>
+    <header class="main-header main-header--light">
+      <div class="container main-header__container">
+        <h1 class="main-header__logo">
+          <span class="sr-only">alriyadh logo</span>
+          <a href="/">
+            <img src="./src/images/logo.png" alt="alriyadh logo" />
+          </a>
+        </h1>
+        <div class="nav-bar--responsive">
+          <nav class="nav-bar nav-bar--sm nav-bar__secondary-menu nav-bar--end">
+            <ul class="nav-bar__menu">
+              <li class="nav-bar__menu-item">
+                <a href="#0" class="nav-bar__menu-link">
+                  <svg width="24" height="24">
+                    <use
+                      xlink:href="./src/images/svg-icons.svg#icon-mobile"
+                    ></use>
+                  </svg>
+                  تطبيقات الجوال</a
+                >
+              </li>
+              <li class="nav-bar__menu-item">
+                <a href="#0" class="nav-bar__menu-link">
+                  <svg width="24" height="24">
+                    <use
+                      xlink:href="./src/images/svg-icons.svg#icon-email"
+                    ></use>
+                  </svg>
+                  إتصل بنا</a
+                >
+              </li>
+              <li class="nav-bar__menu-item">
+                <a href="#0" class="nav-bar__menu-link">
+                  <svg width="24" height="24">
+                    <use
+                      xlink:href="./src/images/svg-icons.svg#icon-language"
+                    ></use>
+                  </svg>
+                  English
+                </a>
+              </li>
+              <li class="nav-bar__menu-item">
+                <a href="#0" id="enableGreyScale" class="nav-bar__menu-link">
+                  <svg width="24" height="24">
+                    <use
+                      xlink:href="./src/images/svg-icons.svg#icon-view-off"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-bar__menu-item">
+                <svg width="65" height="45" class="m-0">
+                  <use
+                    xlink:href="./src/images/svg-icons.svg#icon-vision2030"
+                  ></use>
+                </svg>
+              </li>
+            </ul>
+          </nav>
+          <nav class="nav-bar nav-bar__primary-menu nav-bar--end">
+            <ul class="nav-bar__menu">
+              <li class="nav-bar__menu-item">
+                <a href="#0" class="nav-bar__menu-link">الرئيسية</a>
+              </li>
+              <li class="nav-bar__menu-item">
+                <a href="#0" class="nav-bar__menu-link">إمارة منطقة الرياض</a>
+                <ul class="nav-bar__sub-menu">
+                  <li class="nav-bar__menu-item">
+                    <a href="#0" class="nav-bar__menu-link">عن الاماره</a>
+                  </li>
+                  <li class="nav-bar__menu-item">
+                    <a href="#0" class="nav-bar__menu-link">أمراء الرياض</a>
+                  </li>
+                  <li class="nav-bar__menu-item">
+                    <a href="#0" class="nav-bar__menu-link">محافظات المنطقه</a>
+                  </li>
+                  <li class="nav-bar__menu-item">
+                    <a href="#0" class="nav-bar__menu-link">القسم النسوي</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-bar__menu-item">
+                <a href="#0" class="nav-bar__menu-link">الخدمات الإلكترونية</a>
+              </li>
+              <li class="nav-bar__menu-item">
+                <a href="#0" class="nav-bar__menu-link">المركز الإعلامي</a>
+              </li>
+
+              <li class="nav-bar__menu-item">
+                <div class="search-box">
+                  <a href="#" class="search-box__icon">
+                    <svg width="24" height="24" class="m-0">
+                      <use
+                        xlink:href="./src/images/svg-icons.svg#icon-search"
+                      ></use>
+                    </svg>
+                  </a>
+                  <input
+                    type="search"
+                    class="search-box__input"
+                    placeholder="بحث ..."
+                  />
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-header__responsive">
+          <a
+            href="#0"
+            class="main-header__responsive-icon icon vertical-nav__icon"
+          >
+            <svg>
+              <use xlink:href="./src/images/svg-icons.svg#icon-menu"></use>
+            </svg>
+          </a>
+          <div class="main-header__overlay"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container pt-4 pb-4">
+        <h2 class="main-title">
+          امراء الرياض
+        </h2>
+        <div class="row">
+          <div class="col">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#">الرئيسية</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">أخبار الإمارة</a>
+              </li>
+              <li class="breadcrumb-item active">
+                <span>امراء الرياض </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="article-details__socials">
+              <li>
+                <a href="#0" class="icon">
+                  <svg>
+                    <use
+                      xlink:href="./src/images/svg-icons.svg#icon-print"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <div class="icon custom-dropdown">
+                  <svg>
+                    <use
+                      xlink:href="./src/images/svg-icons.svg#icon-share"
+                    ></use>
+                  </svg>
+                  <div class="custom-dropdown__items">
+                    <a href="#0" class="icon">
+                      <svg>
+                        <use
+                          xlink:href="./src/images/svg-icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                    <a href="#0" class="icon">
+                      <svg>
+                        <use
+                          xlink:href="./src/images/svg-icons.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#0" id="btnFontInc" class="icon">
+                  <svg>
+                    <use
+                      xlink:href="./src/images/svg-icons.svg#icon-zoom-in"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#0" id="btnFontDefault" class="icon">
+                  <svg>
+                    <use
+                      xlink:href="./src/images/svg-icons.svg#icon-zoom"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#0" id="btnFontDec" class="icon">
+                  <svg>
+                    <use
+                      xlink:href="./src/images/svg-icons.svg#icon-zoom-out"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <svg>
+                    <use
+                      xlink:href="./src/images/svg-icons.svg#icon-sound"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cd-timeline article-details" data-fontsize="16">
+          <div class="cd-timeline__container">
+              <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      2015م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince17.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الأمير فيصل بن بندر بن عبد العزيز
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        من عام1436هـ إلى الآن
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 2015م إلى الآن
+                    </span>
+                  </div>
+              </div>
+              <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      2014م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince16.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الأمير تركي بن عبدالله بن عبد العزيز
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        أمير منطقة الرياض من عام1435 هـ إلى 1436هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 2014م إلى 2015م
+                    </span>
+                  </div>
+              </div>
+              <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      2013م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince15.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الأمير تركي بن عبدالله بن عبد العزيز
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        نائب أمير منطقة الرياض من عام 1434هـ إلى 1435 هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 2013م إلى 2014 م
+                    </span>
+                  </div>
+              </div>
+              <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      2013م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince14.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الأمير خالد بن بندر بن عبد العزيز
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        من عام 1434هـ إلى 1435هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 2013م إلى 2014م
+                    </span>
+                  </div>
+              </div>
+              <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      2011م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince13.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الأمير محمد بن سعد بن عبد العزيز
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        نائب أمير منطقة الرياض من عام 1432هـ إلى عام 1434هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 2011م إلى عام 2013م
+                    </span>
+                  </div>
+              </div>
+              <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      2011م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince12.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الأمير سطام بن عبدالعزيز
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        من عام1432هـ إلى عام 1434هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 2011م إلى عام 2013م
+                    </span>
+                  </div>
+              </div>
+              <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      1963م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince11.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الملك سلمان بن عبدالعزيز
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        من عام 1382هـ إلى عام 1432 هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 1963م إلى عام 2011م
+                    </span>
+                  </div>
+              </div>   
+            <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      1961م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince10.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الأمير بدر بن سعود بن عبدالعزيز
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        من عام 1381هـ إلى عام 1382هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 1961م إلى عام 1962م
+                    </span>
+                  </div>
+              </div>  
+            <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      1960م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince9.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الأمير فواز بن عبدالعزيز
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        من عام 1380هـ إلى عام 1381هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 1960م إلى عام 1961م
+                    </span>
+                  </div>
+              </div> 
+              <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      1957م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince8.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الأمير تركي بن عبدالعزيز (بالنيابة) عن الأمير سلمان
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        من عام 1377هـ إلى عام 1380هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 1957م إلى عام 1960م
+                    </span>
+                  </div>
+              </div> 
+            <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      1955م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince7.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الملك سلمان بن عبدالعزيز
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        من عام 1374هـ إلى عام 1380هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 1955م إلى عام 1960م
+                    </span>
+                  </div>
+              </div>  
+              <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      1954م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince6.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الملك سلمان بن عبدالعزيز (بالنيابة) عن الأمير نايف
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        من عام 1373هـ إلى عام 1374هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 1954م إلى عام 1955م
+                    </span>
+                  </div>
+              </div>  
+            <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      1952م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince5.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                        الأمير نايف بن عبدالعزيز
+                        </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                        من عام 1372هـ إلى عام 1374هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من عام 1952م إلى عام 1955
+                    </span>
+                  </div>
+              </div>
+              <div class="cd-timeline__block">
+                  <span class="cd-timeline__block-span"></span>
+                  <div class="cd-timeline__img">
+                    <span>
+                      1952م  
+                    </span>
+                  </div>
+                  <div class="cd-timeline__content">
+                    <img
+                      src="./src/images/prince4.png"
+                      class="cd-timeline__content-img"
+                    />
+                    <h4 class="cd-timeline__content-title">
+                      <a href="#0">
+                      الأمير نايف بن عبدالعزيز (بالنيابة) عن الأمير سلطان
+                      </a>
+                    </h4>
+                    <span class="cd-timeline__content-date cd-timeline__content-date--primary">
+                      من عام 1371هـ إلى عام 1372هـ
+                    </span>
+                    <span class="cd-timeline__content-date">
+                        من 1952/3/3 م إلى 1952/12/19 م
+                    </span>
+                  </div>
+              </div>
+            <div class="cd-timeline__block">
+              <span class="cd-timeline__block-span"></span>
+              <div class="cd-timeline__img">
+                <span>1947م </span>
+              </div>
+              <div class="cd-timeline__content">
+                <img
+                  src="./src/images/prince3.png"
+                  class="cd-timeline__content-img"
+                />
+                <h4 class="cd-timeline__content-title">
+                  <a href="#0">
+                  
+                    الأمير سلطان بن عبدالعزيز
+                  </a>
+                </h4>
+                <span
+                  class="cd-timeline__content-date cd-timeline__content-date--primary"
+                  >من عام 1366هـ إلى عام 1372هـ</span
+                >
+                <span class="cd-timeline__content-date">من عام 1947م إلى عام 1952م</span>
+              </div>
+            </div>
+            <div class="cd-timeline__block">
+              <span class="cd-timeline__block-span"></span>
+              <div class="cd-timeline__img">
+                <span>1937م </span>
+              </div>
+              <div class="cd-timeline__content">
+                <img
+                  src="./src/images/prince2.png"
+                  class="cd-timeline__content-img"
+                />
+                <h4 class="cd-timeline__content-title">
+                  <a href="#0">
+                  
+                  الأمير ناصر بن عبدالعزيز
+                </a>
+                  
+                </h4>
+                <span
+                  class="cd-timeline__content-date cd-timeline__content-date--primary"
+                  >من عام 1356هـ إلى عام 1366هـ</span
+                >
+                <span class="cd-timeline__content-date">من عام 1937م إلى عام 1947م</span>
+              </div>
+            </div>
+            <div class="cd-timeline__block">
+              <span class="cd-timeline__block-span"></span>
+              <div class="cd-timeline__img">
+                <span>1947م</span>
+              </div>
+              <div class="cd-timeline__content">
+                <img
+                  src="./src/images/prince1.png"
+                  class="cd-timeline__content-img"
+                />
+                <h4 class="cd-timeline__content-title"><a href="#0">الأمير محمد بن سعد بن زيد</a></h4>
+                <span
+                  class="cd-timeline__content-date cd-timeline__content-date--primary"
+                  >من عام 1348هـ إلى عام 1355هـ</span
+                >
+                <span class="cd-timeline__content-date">من عام 1929م إلى عام 1936م</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-4 mb-4" />
+        <div class="article__comments">
+          <div class="row">
+            <div class="col-sm-5">
+              <h3 class="mb-4">إضافة تعليق</h3>
+              <div class="form-group">
+                <label for="">الإسم</label>
+                <input class="form-control" type="text" placeholder="الإسم" />
+              </div>
+              <div class="form-group">
+                <label for="">البريد الإلكتروني</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="البريد الإلكتروني"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">تعليقك</label>
+                <textarea class="form-control" placeholder="تعليقك"></textarea>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-primary">أضف تعليقك</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-4 mb-4" />
+        <div class="article__rating">
+          <h3 class="mb-4">رأيك يهمنا</h3>
+          <div class="d-flex">
+            <div class="article__rating-control">
+              <label for="">التقييم</label>
+              <div class="ratingControl"></div>
+            </div>
+            <img
+              src="./src/images/captcha.png"
+              class="article__captcha"
+              alt=""
+            />
+            <label for="">عدد المقيميين: 5</label>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__top">
+        <div class="container">
+          <ul class="main-footer__links row">
+            <li class="col col-sm-4 mb-4 col-lg-2">
+              <h4 class="typo-title">
+                <strong>إمارة منطقة الرياض</strong>
+              </h4>
+              <a href="#/" class="main-footer__link">عن الامارة</a>
+              <a href="#/" class="main-footer__link">أمراد المنطقة</a>
+              <a href="#/" class="main-footer__link">محافظات المنطقة</a>
+              <a href="#/" class="main-footer__link">القسم النسوي</a>
+            </li>
+            <li class="col col-sm-4 mb-4 col-lg-2">
+              <h4 class="typo-title">
+                <strong>الخدمات الالكترونية</strong>
+              </h4>
+              <a href="#/" class="main-footer__link"
+                >خدمات الزواج من الأجانب‎</a
+              >
+              <a href="#/" class="main-footer__link">خدمة السجناء‎</a>
+              <a href="#/" class="main-footer__link"
+                >خدمة إنفاذ الحكم الشرعي‎</a
+              >
+              <a href="#/" class="main-footer__link">خدمة تملك العقار‎</a>
+              <a href="#/" class="main-footer__link"
+                >خدمة التعديات على الأراضي الحكومية‎</a
+              >
+              <a href="#/" class="main-footer__link"
+                >خدمة الاستدعاء الإلكتروني</a
+              >
+            </li>
+            <li class="col col-sm-4 mb-4 col-lg-2">
+              <h4 class="typo-title">
+                <strong>المركز الإعلامي</strong>
+              </h4>
+              <a href="#/" class="main-footer__link">الأخبار</a>
+              <a href="#/" class="main-footer__link">معرض الصور</a>
+              <a href="#/" class="main-footer__link">معرض الفيديو</a>
+              <a href="#/" class="main-footer__link">البيانات المفتوحه‎</a>
+              <a href="#/" class="main-footer__link">التقارير</a>
+              <a href="#/" class="main-footer__link">الإعلانات‎</a>
+            </li>
+            <li class="col col-sm-4 mb-4 col-lg-2">
+              <h4 class="typo-title">
+                <strong>روابط مفيده</strong>
+              </h4>
+              <a href="#/" class="main-footer__link">المجلس الإلكتروني‎</a>
+              <a href="#/" class="main-footer__link">وزارة الداخلية‎</a>
+              <a href="#/" class="main-footer__link">مركز المعلومات الوطني‎</a>
+              <a href="#/" class="main-footer__link"
+                >بوابة المشتريات الحكومية‎</a
+              >
+              <a href="#/" class="main-footer__link"
+                >الأنظمة واللوائح الحكومية</a
+              >
+            </li>
+            <li class="col col-sm-4 mb-4 col-lg-2">
+              <h4 class="typo-title">
+                <strong>روابط مفيده</strong>
+              </h4>
+              <a href="#/" class="main-footer__link">إتصل بنا‎</a>
+              <a href="#/" class="main-footer__link">الأسئلة الشائعة‎</a>
+              <a href="#/" class="main-footer__link">التوظيف</a>
+            </li>
+            <li class="col col-sm-4 mb-4 col-lg-2">
+              <img
+                src="./src/images/logo-vertical.png"
+                alt="logo"
+                class="main-footer__logo"
+              />
+              <ul class="socials-bar">
+                <li class="socials-bar__item">
+                  <a href="#0" class="socials-bar__icon icon">
+                    <svg>
+                      <use
+                        xlink:href="./src/images/svg-icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-bar__item">
+                  <a href="#0" class="socials-bar__icon icon">
+                    <svg>
+                      <use
+                        xlink:href="./src/images/svg-icons.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-bar__item">
+                  <a href="#0" class="socials-bar__icon icon">
+                    <svg>
+                      <use
+                        xlink:href="./src/images/svg-icons.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-bar__item">
+                  <a href="#0" class="socials-bar__icon icon">
+                    <svg>
+                      <use
+                        xlink:href="./src/images/svg-icons.svg#icon-youtube"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-footer__bottom">
+        <div class="container">
+          <div class="row justify-content-sm-between align-items-sm-center">
+            <div class="col">
+              &copy; جميع الحقوق محفوظة إمارة منطقة الرياض
+            </div>
+            <ul class="main-footer__quick-links">
+              <li>
+                <a href="#0">خريطة الموقع</a>
+              </li>
+              <li>
+                <a href="#0">الأسئلة الشائعة</a>
+              </li>
+              <li>
+                <a href="#0">سياسة الخصوصية</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/scripts/moment.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./src/scripts/bootstrap-datetimepicker.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="./src/scripts/svgxuse.min.js"></script>
+    <script src="./src/scripts/scripts.js"></script>
+    <script>
+      $(function() {
+        // rating control
+        $('.ratingControl').rateYo({
+          // maxValue: 1,
+          // numStars: 1,
+          rtl: true,
+          starWidth: '15px',
+          normalFill: '#b3b3b3',
+          ratedFill: '#2b914e'
+        });
+        var defaultSize = $('.article-details').attr('data-fontsize');
+        var currentSize = defaultSize;
+        $('#btnFontInc').on('click', function(e) {
+          e.preventDefault();
+          currentSize++;
+          $('.article-details').css('font-size', currentSize + 'px');
+        });
+        $('#btnFontDec').on('click', function(e) {
+          e.preventDefault();
+          currentSize--;
+          $('.article-details').css('font-size', currentSize + 'px');
+        });
+        $('#btnFontDefault').on('click', function(e) {
+          e.preventDefault();
+          currentSize = defaultSize;
+          $('.article-details').css('font-size', currentSize + 'px');
+        });
+      });
+    </script>
+  </body>
+</html>

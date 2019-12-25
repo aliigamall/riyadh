@@ -14,6 +14,15 @@
 }
 .article-details{
     font-size: 16px;
+    ul, ol, p{
+        margin-bottom: 1em;
+    }
+    h1, h2, h3, h4, h5{
+        color: $color-primary;
+    }
+    .article-details__title{
+        color: #000;
+    }
 }
 .article-details__header{
     display: flex;
@@ -22,6 +31,7 @@
 }
 .article-details__title{
 font-size: 2em;
+color: #000;
 }
 .article-details__socials {
     display: flex;
