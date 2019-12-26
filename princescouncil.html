@@ -21,17 +21,18 @@
         left: 0;
         width: 100%;
         z-index: 100;
+        box-shadow: none;
       }
     </style>
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="main-header main-header--secondary">
       <div class="container main-header__container">
         <h1 class="main-header__logo">
           <span class="sr-only">alriyadh logo</span>
           <a href="/">
-            <img src="./src/images/logo.png" alt="alriyadh logo" />
+            <img src="./src/images/council-logo.png" alt="prince logo" />
           </a>
         </h1>
         <div class="nav-bar--responsive">
@@ -40,51 +41,42 @@
               <li class="nav-bar__menu-item nav-bar__menu-item--flex">
                 <div class="d-flex">
                   <span class="nav-bar__menu-icon nav-bar__menu-icon--light">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <path fill="none" d="M0 0h24v24H0V0z" />
-                      <path
-                        d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                      />
+                    <svg>
+                        <use xlink:href="./src/images/svg-icons.svg#icon-information"></use>
                     </svg>
                   </span>
                   <a
                     href="#0"
                     class="nav-bar__menu-link nav-bar__menu-link--lg nav-bar__menu-link--dark"
-                    >الرئيسية</a
+                    >عن المجلس</a
                   >
                 </div>
               </li>
               <li class="nav-bar__menu-item nav-bar__menu-item--flex">
                 <div class="d-flex">
                   <span class="nav-bar__menu-icon nav-bar__menu-icon--light">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <path fill="none" d="M0 0h24v24H0V0z" />
-                      <path
-                        d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                      />
-                    </svg>
+                      <svg>
+                          <use xlink:href="./src/images/svg-icons.svg#icon-video-square"></use>
+                      </svg>
                   </span>
                   <a
                     href="#0"
                     class="nav-bar__menu-link nav-bar__menu-link--lg nav-bar__menu-link--dark"
-                    >الخدمات الإلكترونية</a
+                    >معرض الفيديو</a
                   >
                 </div>
               </li>
               <li class="nav-bar__menu-item nav-bar__menu-item--flex">
                 <div class="d-flex">
                   <span class="nav-bar__menu-icon nav-bar__menu-icon--light">
-                    <svg width="24" height="24" viewBox="0 0 24 24">
-                      <path fill="none" d="M0 0h24v24H0V0z" />
-                      <path
-                        d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                      />
-                    </svg>
+                      <svg>
+                          <use xlink:href="./src/images/svg-icons.svg#icon-camera"></use>
+                      </svg>
                   </span>
                   <a
                     href="#0"
                     class="nav-bar__menu-link nav-bar__menu-link--lg nav-bar__menu-link--dark"
-                    >المركز الإعلامي</a
+                    >معرض الصور</a
                   >
                 </div>
               </li>
@@ -106,23 +98,22 @@
     </header>
     <main>
       <section
-        class="l-home-section welcome welcome--static welcome--height l-home-section--gray"
+        class="l-home-section welcome welcome--prince welcome--static welcome--height l-home-section--gray"
       >
         <div
-          class="container mb-5  welcome__content welcome__content--custom welcome__content--dark"
+          class="container welcome__content welcome__content--custom welcome__content--dark"
         >
           <div class="row">
             <div class="col-lg-6">
-              <h2 class="welcome__title welcome__title--lg">
+              <h2 class="welcome__title welcome__title--md">
                 المجلس الالكتروني
               </h2>
-              <h2 class="welcome__title">
-                أهداف ومهام الاماره
+              <p class="welcome__subtitle">
+                  لتقديم الطلبات والشكاوى والملاحظات
               </h2>
 
               <div class="welcome__text">
-                إن نهضه اي امه لا تستقيم اذا لم تبن علي اسس أصيلة ، ونحن في
-                بلادنا نتذكر بداية قصة مجدنا ونعتز بما لدينا من قيم .
+                  حرصا من سمو أمير منطقة الرياض على فتح قنوات تواصل بين سموه والمواطنين والمقيمين الذين تمنعهم ظروفهم من مقابلة سمو ه في المجلس اليومي بديوان إمارة منطقة الرياض ( قصر الحكم )، فقد أمر سموه بعمل مجلس إلكتروني
               </div>
               <div class="welcome__action">
                 <a
@@ -139,7 +130,7 @@
                       />
                     </svg>
                   </i>
-                  عرض التفاصيل</a
+                  تقديم طلب للمجلس </a
                 >
                 <a
                   href="#"
@@ -161,56 +152,49 @@
             </div>
             <div class="col-lg-6">
               <div class="welcom-card-container">
-                <div class="welcom-card">
+                <a href="#0" class="welcom-card">
                   <svg class="welcom-card__icon" viewBox="0 0 24 24">
                     <path fill="none" d="M0 0h24v24H0V0z" />
                     <path
                       d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
                     />
                   </svg>
-                  <h3 class="welcom-card__title">تقديم طلب</h3>
-                  <h3 class="welcom-card__title welcom-card__title--secondary">
-                    المجلس الالكتروني
-                  </h3>
-                </div>
-                <div class="welcom-card">
+                  <span class="welcom-card__title">تقديم طلب</span>
+                  <span class="welcom-card__title welcom-card__title--secondary">
+                    للمجلس الالكتروني
+                  </span>
+                </a>
+                <a href="#0" class="welcom-card">
                   <svg class="welcom-card__icon" viewBox="0 0 24 24">
                     <path
                       d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"
                     />
                     <path d="M0 0h24v24H0z" fill="none" />
                   </svg>
-                  <h3 class="welcom-card__title">تقديم طلب</h3>
-                  <h3 class="welcom-card__title welcom-card__title--secondary">
-                    المجلس الالكتروني
-                  </h3>
-                </div>
+                  <span class="welcom-card__title">البوابة الإلكترونية</span>
+                  <span class="welcom-card__title welcom-card__title--secondary">
+                      لإمارة منطقة الرياض
+                  </span>
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="container-fluid">
           <div class="card-panel">
             <div class="container">
               <div class="row mb-5">
                 <div class="panel__header col-md-8">
-                  <svg class="panel__icon" viewBox="0 0 24 24">
-                    <path fill="none" d="M0 0h24v24H0V0z" />
-                    <path
-                      d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                    />
-                  </svg>
-                  <h2 class="panel__title">الخدمات الإلكترونية</h2>
+
+                    <svg class="panel__icon">
+                        <use xlink:href="./src/images/svg-icons.svg#icon-information"></use>
+                    </svg>
+                
+                  <h2 class="panel__title">عن المجلس الإلكتروني لسمو أمير منطقة الرياض</h2>
                   <p class="panel__breif">
-                    عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف
-                    بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة
-                    ودمج هذه الفئة في المجتمععمل على نشر المعرفة والتوعية بمرض
-                    الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات
-                    العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
-                  </p>
+                      فتح قنوات تواصل بين سموه والمواطنين والمقيمين الذين تمنعهم ظروفهم من مقابلة سمو ه في المجلس اليومي                  </p>
                 </div>
               </div>
-              <div class="row pt-5">
+              <div class="row">
                 <div class="col-md-3">
                   <div class="card-verical">
                     <h3 class="card-verical__title card-verical__title--lg">
@@ -222,70 +206,66 @@
                       اهداف
                     </h4>
                     <p class="card-verical__breif">
-                      عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف
-                      بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة
+                        فتح قنوات تواصل بين سموه والمواطنين والمقيمين الذين تمنعهم ظروفهم من مقابلة سمو ه في المجلس اليومي
                     </p>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card-verical">
                     <h3 class="card-verical__title card-verical__title--lg">
-                      01
+                      02
                     </h3>
                     <h4
                       class="card-verical__title card-verical__title--secondary"
                     >
-                      اهداف
+                    قنوات تواصل
                     </h4>
                     <p class="card-verical__breif">
-                      عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف
-                      بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة
+                        فتح قنوات تواصل بين سموه والمواطنين والمقيمين الذين تمنعهم ظروفهم من مقابلة سمو ه في المجلس اليومي
                     </p>
                   </div>
                 </div>
                 <div class="col-md-3">
                   <div class="card-verical">
                     <h3 class="card-verical__title card-verical__title--lg">
-                      01
+                      03
                     </h3>
                     <h4
                       class="card-verical__title card-verical__title--secondary"
                     >
-                      اهداف
+                      المقترحات
                     </h4>
                     <p class="card-verical__breif">
-                      عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف
-                      بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة
+                        فتح قنوات تواصل بين سموه والمواطنين والمقيمين الذين تمنعهم ظروفهم من مقابلة سمو ه في المجلس اليومي
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </section>
 
       <section class="l-home-section l-home-section--gray">
         <div class="container pb-5">
           <div class="panel__header">
-            <svg class="panel__icon" viewBox="0 0 24 24">
-              <path fill="none" d="M0 0h24v24H0V0z" />
-              <path
-                d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-              />
-            </svg>
-            <h2 class="panel__title">الخدمات الإلكترونية</h2>
+              <svg class="panel__icon">
+                  <use xlink:href="./src/images/svg-icons.svg#icon-video-square"></use>
+              </svg>
+            
+            <h2 class="panel__title">مكتبة الفيديو</h2>
           </div>
           <div class="row">
             <div class="col-lg-8">
               <div class="card-show">
-                <img class="card-show__img" src="./src/images/banner2.jpg" />
-                <svg class="card-show__icon" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
-                  />
-                </svg>
+                <img class="card-show__img" src="./src/images/video1.jpg" />
+                <a href="#0" class="card-show__icon">
+                  <svg class="" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
+                    />
+                  </svg>
+                </a>
                 <div class="card-show__date">
                   <p class="card-show__date-day"><span>الاثنين</span> 05</p>
                   <p class="card-show__date-month">يناير</p>
@@ -295,18 +275,17 @@
                 </h2>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 panel__flex-col">
               <div class="card-show card-show--sm">
-                <img class="card-show__img" src="./src/images/banner2.jpg" />
-                <svg
-                  class="card-show__icon card-show__icon--sm"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
-                  />
-                </svg>
+                <img class="card-show__img" src="./src/images/video2.jpg" />
+                <a href="#0" class="card-show__icon card-show__icon--sm">
+                    <svg class="" viewBox="0 0 24 24">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
+                      />
+                    </svg>
+                  </a>
                 <div class="card-show__content">
                   <p class="card-show__content-date">05 الاثنين يناير 2019</p>
                   <p class="card-show__content-breif">
@@ -315,16 +294,15 @@
                 </div>
               </div>
               <div class="card-show card-show--sm">
-                <img class="card-show__img" src="./src/images/banner2.jpg" />
-                <svg
-                  class="card-show__icon card-show__icon--sm"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
-                  />
-                </svg>
+                <img class="card-show__img" src="./src/images/video3.jpg" />
+                <a href="#0" class="card-show__icon card-show__icon--sm">
+                    <svg class="" viewBox="0 0 24 24">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
+                      />
+                    </svg>
+                  </a>
                 <div class="card-show__content">
                   <p class="card-show__content-date">05 الاثنين يناير 2019</p>
                   <p class="card-show__content-breif">
@@ -333,16 +311,15 @@
                 </div>
               </div>
               <div class="card-show card-show--sm">
-                <img class="card-show__img" src="./src/images/banner2.jpg" />
-                <svg
-                  class="card-show__icon card-show__icon--sm"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
-                  />
-                </svg>
+                <img class="card-show__img" src="./src/images/video4.jpg" />
+                <a href="#0" class="card-show__icon card-show__icon--sm">
+                    <svg class="" viewBox="0 0 24 24">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
+                      />
+                    </svg>
+                  </a>
                 <div class="card-show__content">
                   <p class="card-show__content-date">05 الاثنين يناير 2019</p>
                   <p class="card-show__content-breif">
@@ -355,81 +332,100 @@
         </div>
       </section>
 
-      <section class="l-home-section">
-        
-      </section>
+      <section class="l-home-section l-home-section--gray">
+          <div class="container pb-5">
+            <div class="panel__header">
+                <svg class="panel__icon">
+                    <use xlink:href="./src/images/svg-icons.svg#icon-camera"></use>
+                </svg>
+              
+              <h2 class="panel__title">مكتبة الصور</h2>
+            </div>
+            <div class="row">
+             <div class="col-md-3">
+                <div class="card card--absolute eservice-card">
+                    <a href="#" class="card__image">
+                        <img src="./src/images/gallery1.jpg" alt="news">
+                    </a>
+                    <div class="card__content">
+                        <i class="card__icon card__icon--dark mb-5">
+                            <svg style="width: 30px; height: 30px;">
+                                <use xlink:href="./src/images/svg-icons.svg#icon-camera"></use>
+                            </svg>
+                        </i>
+                       
+                        <a href="#0" class="card__brief pb-3">
+                            سمو أمير منطقة الرياض يدشن 17 مشروعاً بيئياً وحضرياً جديداً في العاصمة الرياض
+                        </a>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-3">
+                <div class="card card--absolute eservice-card">
+                    <a href="#" class="card__image">
+                        <img src="./src/images/gallery2.jpg" alt="news">
+                    </a>
+                    <div class="card__content">
+                        <i class="card__icon card__icon--dark mb-5">
+                            <svg style="width: 30px; height: 30px;">
+                                <use xlink:href="./src/images/svg-icons.svg#icon-camera"></use>
+                            </svg>
+                        </i>
+                       
+                        <a href="#0" class="card__brief pb-3">
+                            سمو أمير منطقة الرياض يدشن 17 مشروعاً بيئياً وحضرياً جديداً في العاصمة الرياض
+                        </a>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-3">
+                <div class="card card--absolute eservice-card">
+                    <a href="#" class="card__image">
+                        <img src="./src/images/gallery3.jpg" alt="news">
+                    </a>
+                    <div class="card__content">
+                        <i class="card__icon card__icon--dark mb-5">
+                            <svg style="width: 30px; height: 30px;">
+                                <use xlink:href="./src/images/svg-icons.svg#icon-camera"></use>
+                            </svg>
+                        </i>
+                       
+                        <a href="#0" class="card__brief pb-3">
+                            سمو أمير منطقة الرياض يدشن 17 مشروعاً بيئياً وحضرياً جديداً في العاصمة الرياض
+                        </a>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-3">
+                <div class="card card--absolute eservice-card">
+                    <a href="#" class="card__image">
+                        <img src="./src/images/gallery4.jpg" alt="news">
+                    </a>
+                    <div class="card__content">
+                        <i class="card__icon card__icon--dark mb-5">
+                            <svg style="width: 30px; height: 30px;">
+                                <use xlink:href="./src/images/svg-icons.svg#icon-camera"></use>
+                            </svg>
+                        </i>
+                       
+                        <a href="#0" class="card__brief pb-3">
+                            سمو أمير منطقة الرياض يدشن 17 مشروعاً بيئياً وحضرياً جديداً في العاصمة الرياض
+                        </a>
+                    </div>
+                </div>
+             </div>
+            </div>
+          </div>
+        </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--dark">
       <div class="main-footer__top">
         <div class="container">
-          <ul class="main-footer__links row">
-            <li class="col col-sm-4 col-lg-2">
-              <h4 class="typo-title">
-                <strong>إمارة منطقة الرياض</strong>
-              </h4>
-              <a href="#/" class="main-footer__link">عن الامارة</a>
-              <a href="#/" class="main-footer__link">أمراد المنطقة</a>
-              <a href="#/" class="main-footer__link">محافظات المنطقة</a>
-              <a href="#/" class="main-footer__link">القسم النسوي</a>
-            </li>
-            <li class="col col-sm-4 col-lg-2">
-              <h4 class="typo-title">
-                <strong>الخدمات الالكترونية</strong>
-              </h4>
-              <a href="#/" class="main-footer__link"
-                >خدمات الزواج من الأجانب‎</a
-              >
-              <a href="#/" class="main-footer__link">خدمة السجناء‎</a>
-              <a href="#/" class="main-footer__link"
-                >خدمة إنفاذ الحكم الشرعي‎</a
-              >
-              <a href="#/" class="main-footer__link">خدمة تملك العقار‎</a>
-              <a href="#/" class="main-footer__link"
-                >خدمة التعديات على الأراضي الحكومية‎</a
-              >
-              <a href="#/" class="main-footer__link"
-                >خدمة الاستدعاء الإلكتروني</a
-              >
-            </li>
-            <li class="col col-sm-4 col-lg-2">
-              <h4 class="typo-title">
-                <strong>المركز الإعلامي</strong>
-              </h4>
-              <a href="#/" class="main-footer__link">الأخبار</a>
-              <a href="#/" class="main-footer__link">معرض الصور</a>
-              <a href="#/" class="main-footer__link">معرض الفيديو</a>
-              <a href="#/" class="main-footer__link">البيانات المفتوحه‎</a>
-              <a href="#/" class="main-footer__link">التقارير</a>
-              <a href="#/" class="main-footer__link">الإعلانات‎</a>
-            </li>
-            <li class="col col-sm-4 col-lg-2">
-              <h4 class="typo-title">
-                <strong>روابط مفيده</strong>
-              </h4>
-              <a href="#/" class="main-footer__link">المجلس الإلكتروني‎</a>
-              <a href="#/" class="main-footer__link">وزارة الداخلية‎</a>
-              <a href="#/" class="main-footer__link">مركز المعلومات الوطني‎</a>
-              <a href="#/" class="main-footer__link"
-                >بوابة المشتريات الحكومية‎</a
-              >
-              <a href="#/" class="main-footer__link"
-                >الأنظمة واللوائح الحكومية</a
-              >
-            </li>
-            <li class="col col-sm-4 col-lg-2">
-              <h4 class="typo-title">
-                <strong>روابط مفيده</strong>
-              </h4>
-              <a href="#/" class="main-footer__link">إتصل بنا‎</a>
-              <a href="#/" class="main-footer__link">الأسئلة الشائعة‎</a>
-              <a href="#/" class="main-footer__link">التوظيف</a>
-            </li>
-            <li class="col col-sm-4 col-lg-2">
-              <img
-                src="./src/images/logo-vertical.png"
-                alt="logo"
-                class="main-footer__logo"
-              />
+          <ul class="main-footer__links">
+              <li class="">
+                <img src="./src/images/council-logo-white.png" alt="">
+              </li>
+            <li class="">
               <ul class="socials-bar">
                 <li class="socials-bar__item">
                   <a href="#0" class="socials-bar__icon icon">
@@ -476,14 +472,11 @@
         <div class="container">
           <div class="row justify-content-sm-between align-items-sm-center">
             <div class="col">
-              &copy; جميع الحقوق محفوظة إمارة منطقة الرياض
+              &copy; جميع الحقوق محفوظة لإمارة منطقة الرياض 2020  
             </div>
             <ul class="main-footer__quick-links">
               <li>
-                <a href="#0">خريطة الموقع</a>
-              </li>
-              <li>
-                <a href="#0">الأسئلة الشائعة</a>
+                <a href="#0">الشروط والأحكام</a>
               </li>
               <li>
                 <a href="#0">سياسة الخصوصية</a>
