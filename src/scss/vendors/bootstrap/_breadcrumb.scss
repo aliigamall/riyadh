@@ -6,6 +6,11 @@
   list-style: none;
   background-color: $breadcrumb-bg;
   @include border-radius($border-radius);
+  &--secondary{
+    a{
+      color: $color-secondary;
+    }
+  }
 }
 
 .breadcrumb-item {

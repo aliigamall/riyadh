@@ -92,3 +92,19 @@
     display: flex;
     text-align: center;
 }
+.main-header--secondary{
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.05);
+    background: transparent;
+    @include breakpoint(isCommon){
+        .nav-bar--responsive{
+            background-color: $color-secondary;
+        }
+        .nav-bar__menu{
+            width: 100%;
+        }
+        .nav-bar__menu-link{
+            flex: 1;
+        }
+    }
+
+}
