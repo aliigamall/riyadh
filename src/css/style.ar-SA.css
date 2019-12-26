@@ -193,6 +193,14 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #fff;
 }
 
@@ -4906,6 +4914,10 @@ tbody.collapse.show {
   margin-bottom: 1rem;
   list-style: none;
   background-color: #e9ecef;
+}
+
+.breadcrumb--secondary a {
+  color: #cca63b;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -10636,6 +10648,13 @@ button.button--transparent {
   border: 1px solid #fff;
 }
 
+.button--transparent:hover,
+input[type].button--transparent:hover,
+button.button--transparent:hover {
+  background-color: white;
+  color: #000;
+}
+
 .button--dark,
 input[type].button--dark,
 button.button--dark {
@@ -10659,7 +10678,7 @@ button.button--rounded .button__icon {
 input[type].button--md,
 button.button--md {
   font-size: 1.125rem;
-  padding: 0.35em 1.8em;
+  padding: 0.35em 2.3em 0.65em 2.3em;
   min-width: 12.5rem;
 }
 
@@ -11160,6 +11179,26 @@ textarea.form-control {
   text-align: center;
 }
 
+.main-header--secondary {
+  -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.05);
+  background: transparent;
+}
+
+@media (min-width: 0) and (max-width: 1024px) {
+  .main-header--secondary .nav-bar--responsive {
+    background-color: #cca63b;
+  }
+  .main-header--secondary .nav-bar__menu {
+    width: 100%;
+  }
+  .main-header--secondary .nav-bar__menu-link {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
 .faq-section {
   display: inline-block;
   width: 100%;
@@ -11348,6 +11387,10 @@ div#accordion .groupheader:nth-child(1) {
   width: 45px;
   border-right: 1px solid #ccc;
   padding-right: 15px;
+}
+
+.main-footer {
+  margin-top: auto;
 }
 
 .main-footer__top {
@@ -11542,6 +11585,40 @@ div#accordion .groupheader:nth-child(1) {
 .main-footer__logo {
   display: block;
   margin: 0 auto 20px;
+}
+
+.main-footer--dark .main-footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-footer--dark .main-footer__top {
+  background-color: #171a20;
+}
+
+.main-footer--dark .main-footer__bottom {
+  color: #fff;
+  background-color: #131418;
+  border-top: 1px solid #131418;
+}
+
+.main-footer--dark .main-footer__quick-links a {
+  color: #fff;
+}
+
+.main-footer--dark .icon > svg {
+  fill: #cca63b;
+}
+
+.main-footer--dark .icon:hover > svg {
+  fill: #fff;
 }
 
 .nav-bar {
@@ -11846,6 +11923,10 @@ div#accordion .groupheader:nth-child(1) {
   font-size: 1.25rem;
 }
 
+.nav-bar__menu .nav-bar__menu-link--dark:hover {
+  color: #cca63b;
+}
+
 .vertical-nav__icon {
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: 0px 0px 49px 0px rgba(0, 0, 0, 0.35);
@@ -11978,6 +12059,10 @@ div#accordion .groupheader:nth-child(1) {
   margin: 0 auto;
 }
 
+.card__icon--dark {
+  background: rgba(0, 0, 0, 0.55);
+}
+
 .card__icon svg {
   fill: #fff;
   width: 45px;
@@ -12003,6 +12088,10 @@ div#accordion .groupheader:nth-child(1) {
 
 .card--dark .card__brief {
   color: #fff !important;
+  text-decoration: none;
+}
+
+.card--dark .card__brief:hover {
   text-decoration: none;
 }
 
@@ -12083,6 +12172,10 @@ div#accordion .groupheader:nth-child(1) {
   padding: 10px 10px 40px 10px;
 }
 
+.card--absolute .card__brief:hover {
+  text-decoration: none;
+}
+
 .card--absolute:hover {
   -webkit-box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.33);
   box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.33);
@@ -12109,6 +12202,14 @@ div#accordion .groupheader:nth-child(1) {
   margin-bottom: 30px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+.card--absolute:hover .card__icon--dark {
+  background: #cca63b;
+}
+
+.card--absolute:hover .card__icon--dark > svg {
+  fill: #fff !important;
 }
 
 .card--absolute:hover .card__icon > svg {
@@ -12243,12 +12344,16 @@ div#accordion .groupheader:nth-child(1) {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 20%;
   flex: 0 0 20%;
+  border: 2px solid #fff;
   overflow: hidden;
   position: relative;
 }
 
 .images__gallery-item img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -12284,13 +12389,13 @@ div#accordion .groupheader:nth-child(1) {
 }
 
 .card-panel {
-  background-color: #fff;
-  margin: auto 20px;
-  padding: 60px 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4);
-  box-shadow: rgba(0, 0, 0, 0.4);
+  background: url("../images/tower.png") no-repeat #fff;
+  background-size: contain;
+  margin: auto;
+  padding: 2em 2.5em 5em 2.5em;
   border-radius: 20px;
-  margin-bottom: 54px;
+  margin-bottom: 60px;
+  max-width: 1300px;
   -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.12);
 }
@@ -12298,7 +12403,7 @@ div#accordion .groupheader:nth-child(1) {
 .panel__icon {
   width: 50px;
   height: 50px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 50%;
   background-color: #cca63b;
   fill: #fff;
@@ -12312,7 +12417,8 @@ div#accordion .groupheader:nth-child(1) {
 
 .panel__breif {
   font-size: 1rem;
-  margin-bottom: 1em;
+  line-height: 2.1;
+  margin-bottom: 0;
 }
 
 .card-verical__title {
@@ -12338,16 +12444,6 @@ div#accordion .groupheader:nth-child(1) {
   position: relative;
   height: 100%;
   overflow: hidden;
-}
-
-.card-show--sm {
-  max-height: 300px;
-}
-
-@media (min-width: 1025px) {
-  .card-show--sm {
-    max-height: 170px;
-  }
 }
 
 .card-show--sm + .card-show--sm {
@@ -12456,6 +12552,16 @@ div#accordion .groupheader:nth-child(1) {
 .card-show__content-breif {
   margin-bottom: 0;
   font-size: 1rem;
+}
+
+.panel__flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .icon {
@@ -12927,8 +13033,12 @@ div#accordion .groupheader:nth-child(1) {
 
 .welcome--height {
   height: auto;
-  min-height: 170vh;
   background-size: 100% 70%;
+}
+
+.welcome--prince {
+  background: url("../images/council-banner.jpg") no-repeat 0 0 #eee;
+  background-size: 100%;
 }
 
 .welcome__content {
@@ -12941,7 +13051,8 @@ div#accordion .groupheader:nth-child(1) {
 }
 
 .welcome__content--custom {
-  margin-top: 200px;
+  margin-top: 120px;
+  margin-bottom: 70px;
 }
 
 .welcome__tab-panel {
@@ -13054,6 +13165,13 @@ div#accordion .groupheader:nth-child(1) {
 }
 
 @media (min-width: 768px) {
+  .welcome__title--md {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (min-width: 768px) {
   .welcome__title--lg {
     font-size: 3.75rem;
     margin-bottom: 0.5em;
@@ -13061,7 +13179,7 @@ div#accordion .groupheader:nth-child(1) {
 }
 
 .welcome__subtitle {
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   font-weight: 400;
 }
 
@@ -13335,9 +13453,9 @@ div#accordion .groupheader:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -13360,11 +13478,18 @@ div#accordion .groupheader:nth-child(1) {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
-  width: 210px;
+  width: 195px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .welcom-card + .welcom-card {
   margin-right: 20px;
+}
+
+.welcom-card:hover {
+  background-color: #fff;
+  text-decoration: none;
 }
 
 .welcom-card__icon {
@@ -13381,6 +13506,30 @@ div#accordion .groupheader:nth-child(1) {
 
 .welcom-card__title--secondary {
   color: #cca63b;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .welcome--prince .welcome__subtitle {
+    display: block;
+  }
+  .welcome--prince .welcome__text {
+    display: block;
+  }
+  .welcome--prince .button--md {
+    padding: 0.35em 2.3em 0.65em 0.3em;
+  }
+  .welcome--prince .welcome__action {
+    margin-bottom: 20px;
+  }
+  .card-show {
+    margin-bottom: 20px;
+  }
+  .main-footer--dark .main-footer__links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 .breadcrumb {
