@@ -11211,26 +11211,6 @@ textarea.form-control {
   }
 }
 
-.main-header--secondary {
-  -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.05);
-  background: transparent;
-}
-
-@media (min-width: 0) and (max-width: 1024px) {
-  .main-header--secondary .nav-bar--responsive {
-    background-color: #cca63b;
-  }
-  .main-header--secondary .nav-bar__menu {
-    width: 100%;
-  }
-  .main-header--secondary .nav-bar__menu-link {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-  }
-}
-
 .faq-section {
   display: inline-block;
   width: 100%;
