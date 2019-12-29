@@ -285,10 +285,13 @@
 }
 .images__gallery-item {
   flex: 0 0 20%;
+  border: 2px solid #fff;
   overflow: hidden;
   position: relative;
   img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: all 0.2s ease-in-out;
   }
   &:hover {
@@ -374,10 +377,8 @@
   height: 100%;
   overflow: hidden;
   &--sm {
-    max-height: 300px;
-    @include breakpoint(large) {
-      max-height: 170px;
-    }
+    // max-height: 300px;
+    
     + .card-show--sm {
       margin-top: 4px;
     }
@@ -467,4 +468,9 @@
 .card-show__content-breif {
   margin-bottom: 0;
   font-size: rem(16);
+}
+
+.panel__flex-col{
+  display: flex;
+  flex-direction: column;
 }

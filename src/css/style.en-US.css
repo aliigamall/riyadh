@@ -303,6 +303,14 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #fff;
 }
 
@@ -5016,6 +5024,10 @@ tbody.collapse.show {
   margin-bottom: 1rem;
   list-style: none;
   background-color: #e9ecef;
+}
+
+.breadcrumb--secondary a {
+  color: #cca63b;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -11275,11 +11287,29 @@ textarea.form-control {
 }
 
 .eservice-header {
-  font-size: 2em;
+  font-size: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.eservice-header span {
+  padding-bottom: 10px;
+}
+
+.eservice-header > svg {
+  width: 60px;
+  height: 60px;
+}
+
+.main-header--secondary {
+  -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.05);
+  background: transparent;
 }
 
 @media (min-width: 0) and (max-width: 1024px) {
@@ -11484,6 +11514,10 @@ div#accordion .groupheader:nth-child(1) {
   width: 45px;
   border-left: 1px solid #ccc;
   padding-left: 15px;
+}
+
+.main-footer {
+  margin-top: auto;
 }
 
 .main-footer__top {
@@ -12437,12 +12471,16 @@ div#accordion .groupheader:nth-child(1) {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 20%;
   flex: 0 0 20%;
+  border: 2px solid #fff;
   overflow: hidden;
   position: relative;
 }
 
 .images__gallery-item img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -12533,16 +12571,6 @@ div#accordion .groupheader:nth-child(1) {
   position: relative;
   height: 100%;
   overflow: hidden;
-}
-
-.card-show--sm {
-  max-height: 300px;
-}
-
-@media (min-width: 1025px) {
-  .card-show--sm {
-    max-height: 170px;
-  }
 }
 
 .card-show--sm + .card-show--sm {
@@ -12651,6 +12679,16 @@ div#accordion .groupheader:nth-child(1) {
 .card-show__content-breif {
   margin-bottom: 0;
   font-size: 1rem;
+}
+
+.panel__flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .icon {

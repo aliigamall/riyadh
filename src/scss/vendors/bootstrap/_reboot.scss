@@ -111,6 +111,10 @@ body {
   font-weight: $font-weight-base;
   line-height: $line-height-base;
   color: $body-color;
+  // to make footer sticky in the bottom
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   @supports (text-align: start) {
     text-align: start; // 3
   }
