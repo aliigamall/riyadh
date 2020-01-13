@@ -20,6 +20,11 @@
   &--prince {
     background: url("#{$img-path}/council-banner.jpg") no-repeat 0 0 #eee;
     background-size: 100%;
+    .welcome__action{
+      @include breakpoint(mid) {
+        margin-top: rem(45);
+      }
+    }
   }
 }
 
@@ -32,7 +37,7 @@
   }
 
   &--custom {
-    margin-top: 120px;
+    margin-top: 160px;
     margin-bottom: 70px;
   }
 }
@@ -123,7 +128,7 @@
 
 .welcome__title {
   font-size: rem(22);
-  font-weight: 400;
+  font-weight: 500;
 
   @include breakpoint(mid) {
     font-size: rem(44);
@@ -131,7 +136,7 @@
 
   &--md {
     @include breakpoint(mid) {
-      font-size: rem(48);
+      font-size: rem(50);
       margin-bottom: 0.5em;
     }
   }
@@ -151,6 +156,10 @@
   @include breakpoint(isMobile) {
     display: none;
   }
+
+  &--md{
+    font-size: rem(35);
+  }
 }
 
 .welcome__text {
@@ -160,6 +169,9 @@
 
   @include breakpoint(isMobile) {
     display: none;
+  }
+  &--sm{
+    font-size: rem(16);
   }
 }
 
@@ -369,7 +381,7 @@
 
 .welcom-card-container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   height: 100%;
 }
@@ -435,5 +447,19 @@
 
   .main-footer--dark .main-footer__links {
     flex-direction: column;
+  }
+}
+.welcome__arrow{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  @include breakpoint(isCommon){
+    display: none;
+  }
+  > svg{
+    width: 34px;
+    height: 54px;
+    fill: rgba(0,0,0,.5);
   }
 }

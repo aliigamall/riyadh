@@ -79,7 +79,7 @@ button.button {
     background-color: $color-primary;
     // color: $color-text;
     &:hover {
-      background-color: $color-primary;
+      background-color: darken($color-primary, 10);
       // color: rgba(#000, .87);
     }
   }
@@ -138,7 +138,7 @@ button.button {
   &--cancel {
     background-color: #ccc;
     &:hover {
-      background-color: #c1c1c1;
+      background-color: #8a8a8a;
     }
   }
   + .button {

@@ -88,9 +88,17 @@
     }
 }
 .eservice-header{
-    font-size: 2em;
+    font-size: 1.5em;
     display: flex;
     text-align: center;
+    align-items: center;
+    span{
+        padding-bottom: 10px;
+    }
+    > svg{
+        width: 60px;
+        height: 60px;
+    }
 }
 .main-header--secondary{
     box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.05);
