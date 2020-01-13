@@ -20,11 +20,14 @@
   &--prince {
     background: url("#{$img-path}/council-banner.jpg") no-repeat 0 0 #eee;
     background-size: 100%;
+<<<<<<< HEAD
     .welcome__action{
       @include breakpoint(mid) {
         margin-top: rem(45);
       }
     }
+=======
+>>>>>>> e4494bfe6aebea48525ba01ae121102ae1016e6c
   }
 }
 
@@ -37,7 +40,11 @@
   }
 
   &--custom {
+<<<<<<< HEAD
     margin-top: 160px;
+=======
+    margin-top: 120px;
+>>>>>>> e4494bfe6aebea48525ba01ae121102ae1016e6c
     margin-bottom: 70px;
   }
 }
@@ -128,7 +135,11 @@
 
 .welcome__title {
   font-size: rem(22);
+<<<<<<< HEAD
   font-weight: 500;
+=======
+  font-weight: 400;
+>>>>>>> e4494bfe6aebea48525ba01ae121102ae1016e6c
 
   @include breakpoint(mid) {
     font-size: rem(44);
@@ -136,7 +147,11 @@
 
   &--md {
     @include breakpoint(mid) {
+<<<<<<< HEAD
       font-size: rem(50);
+=======
+      font-size: rem(48);
+>>>>>>> e4494bfe6aebea48525ba01ae121102ae1016e6c
       margin-bottom: 0.5em;
     }
   }
@@ -381,7 +396,11 @@
 
 .welcom-card-container {
   display: flex;
+<<<<<<< HEAD
   align-items: flex-end;
+=======
+  align-items: center;
+>>>>>>> e4494bfe6aebea48525ba01ae121102ae1016e6c
   justify-content: flex-end;
   height: 100%;
 }
@@ -448,6 +467,7 @@
   .main-footer--dark .main-footer__links {
     flex-direction: column;
   }
+<<<<<<< HEAD
 }
 .welcome__arrow{
   display: flex;
@@ -463,3 +483,6 @@
     fill: rgba(0,0,0,.5);
   }
 }
+=======
+}
+>>>>>>> e4494bfe6aebea48525ba01ae121102ae1016e6c

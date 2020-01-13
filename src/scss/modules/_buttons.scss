@@ -79,7 +79,11 @@ button.button {
     background-color: $color-primary;
     // color: $color-text;
     &:hover {
+<<<<<<< HEAD
       background-color: darken($color-primary, 10);
+=======
+      background-color: $color-primary;
+>>>>>>> e4494bfe6aebea48525ba01ae121102ae1016e6c
       // color: rgba(#000, .87);
     }
   }
@@ -138,7 +142,11 @@ button.button {
   &--cancel {
     background-color: #ccc;
     &:hover {
+<<<<<<< HEAD
       background-color: #8a8a8a;
+=======
+      background-color: #c1c1c1;
+>>>>>>> e4494bfe6aebea48525ba01ae121102ae1016e6c
     }
   }
   + .button {
