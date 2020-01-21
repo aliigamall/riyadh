@@ -28,6 +28,10 @@ button.button {
   &[disabled] {
     color: rgba(0, 0, 0, 0.26);
     cursor: default;
+    &:hover{
+      color: rgba(0, 0, 0, 0.26);
+      background-color: inherit;
+    }
   }
 
   &--outline {
@@ -79,11 +83,7 @@ button.button {
     background-color: $color-primary;
     // color: $color-text;
     &:hover {
-<<<<<<< HEAD
       background-color: darken($color-primary, 10);
-=======
-      background-color: $color-primary;
->>>>>>> e4494bfe6aebea48525ba01ae121102ae1016e6c
       // color: rgba(#000, .87);
     }
   }
@@ -112,6 +112,30 @@ button.button {
     background-color: #262626;
     color: #fff !important; // to override SP styles
   }
+  &--danger {
+    background-color: #f19595;
+    color: #912b2b;
+    &:hover{
+      background-color: #d48080;
+      color: #912b2b;
+    }
+  }
+  &--warning {
+    background-color: #f1ee95;
+    color: #cca538;
+    &:hover{
+      background-color: #dcd988;
+      color: #cca538;
+    }
+  }
+  &--success {
+    background-color: #95f1a1;
+    color: #28924f;
+    &:hover{
+      background-color: #88dc93;
+      color: #28924f;
+    }
+  }
 
   &--rounded {
     border-radius: 5em;
@@ -137,16 +161,13 @@ button.button {
   }
   &--block {
     display: block;
+    width: 100%;
   }
 
   &--cancel {
     background-color: #ccc;
     &:hover {
-<<<<<<< HEAD
       background-color: #8a8a8a;
-=======
-      background-color: #c1c1c1;
->>>>>>> e4494bfe6aebea48525ba01ae121102ae1016e6c
     }
   }
   + .button {

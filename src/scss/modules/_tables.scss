@@ -11,19 +11,20 @@
     }
     tr{
         border-bottom: 1px solid #e3e3e3;
-        &:nth-child(even){
-          td{
-            background-color: #f2f2f2;
-          }
-        }
+        // &:nth-child(even){
+        //   td{
+        //     background-color: #f2f2f2;
+        //   }
+        // }
     }
     th {
-        font-weight: 500;
+        font-weight: 400;
         padding: 16px;
         min-height: 49px;
         border: 0;
         vertical-align: middle;
         background-color: $color-secondary;
+        color: #fff;
     }
     td {
         padding: 12px 16px;
@@ -31,6 +32,10 @@
         border: 0;
         vertical-align: middle;
         font-weight: 400;
+        color: #737373;
+        .icon > svg{
+          fill: rgba(0, 0, 0, 0.3);
+        }
         a{
             vertical-align: middle;
             color: $color-secondary;
